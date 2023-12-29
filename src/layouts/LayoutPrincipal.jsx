@@ -6,7 +6,7 @@ export default function LayoutPrincipal() {
   return (
     <>
       <Nav />
-        <Outlet></Outlet>
+        <Outlet/>
       <Footer />
     </>
   );
