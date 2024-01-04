@@ -18,12 +18,14 @@ export default function Nav() {
                   fill="currentColor"
                 />
               </svg>
+              
             </a>
+            <p>Titulo</p>
           </div>
 
           <div className="md:flex md:items-center  md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-sm text-black" >
+              <ul className="flex items-center gap-6 text-lg font-semibold  text-black" >
                 <li>
                   <a
                     className="transition hover:text-gray-300 dark:text-white dark:hover:text-white/75"
