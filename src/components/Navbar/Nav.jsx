@@ -23,7 +23,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg"
+        className="p-1 font-semibold text-lg text-gray-100"
       >
         <a href="#" className="flex items-center">
           Inicio
@@ -33,7 +33,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg"
+        className="p-1 font-semibold text-lg text-gray-100"
       >
         <a href="#" className="flex items-center">
           Menú
@@ -43,7 +43,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg"
+        className="p-1 font-semibold text-lg text-gray-100"
       >
         <a href="#" className="flex items-center">
           Sobre Nosotros
@@ -53,7 +53,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg"
+        className="p-1 font-semibold text-lg text-gray-100"
       >
         <a href="#" className="flex items-center">
           Contacto
@@ -63,14 +63,15 @@ export default function Nav() {
   );
 
   return (
-    <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-4 lg:px-8 bg-gradient-to-r from-teal-300 to-green-200 ">
-      <div className="flex items-center justify-between text-blue-gray-900">
+    // class = bg-gradient-to-r from-teal-300 to-green-200
+    <Navbar blurred:false className="fixed top-0 z-10 h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-black/50" style={{backdropFilter: "none"}}>
+      <div className="flex items-center justify-between text-gray-200">
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-bold text-2xl"
+          className="mr-4 cursor-pointer py-1.5 font-bold italic text-3xl font-serif"
         >
-          Material Tailwind
+          Delicious
         </Typography>
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
