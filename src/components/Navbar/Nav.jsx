@@ -64,7 +64,7 @@ export default function Nav() {
 
   return (
     // class = bg-gradient-to-r from-teal-300 to-green-200
-    <Navbar blurred:false className="fixed top-0 z-10 h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-black/50" style={{backdropFilter: "none"}}>
+    <Navbar blurred:false className="fixed top-0 z-10 h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-black/70" style={{backdropFilter: "none"}}>
       <div className="flex items-center justify-between text-gray-200">
         <Typography
           as="a"
