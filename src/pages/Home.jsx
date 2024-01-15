@@ -1,4 +1,4 @@
-import CarouselDelHeader from "../components/Carousel/carouselDelHeader";
+import CarouselDelHeader from "../components/Carousel/CarouselDelHeader";
 import Hero from "../components/Hero/Hero";
 
 export default function Home() {
