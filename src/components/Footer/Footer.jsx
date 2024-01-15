@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
-    <div className="container mx-auto bg-black/80">
+    <div className="container mx-auto bg-black/80 py-5 flex flex-wrap justify-center">
       <div className="text-white text-center">
-        <h1>Delicious</h1>
+        <h1 className="text-orange-500 text-3xl">Delicious</h1>
         <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
 
         <p>© Copyright Delicious. All Rights Reserved</p>
-        <p>Creado por José Vilte</p>
+        <p>Creado por <span className="text-deep-orange-300"><a>José Vilte</a></span></p>
       </div>
       
       
