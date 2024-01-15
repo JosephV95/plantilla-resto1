@@ -1,9 +1,11 @@
 export default function Footer() {
   return (
-    <div className="container mx-auto bg-black/80 py-5 flex flex-wrap justify-center">
-      <div className="text-white text-center">
+    <div className=" mx-auto bg-black/80 py-7 px-2">
+      <div className="text-white text-center  flex flex-col gap-3">
         <h1 className="text-orange-500 text-3xl">Delicious</h1>
-        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+        <p className="text-">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+
+        <div><p>Aqui iran las redes sociales.</p></div>
 
         <p>© Copyright Delicious. All Rights Reserved</p>
         <p>Creado por <span className="text-deep-orange-300"><a>José Vilte</a></span></p>
