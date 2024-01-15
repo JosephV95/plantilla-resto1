@@ -1,9 +1,10 @@
 import { Carousel } from "@material-tailwind/react";
+import './CarouselDelHeader.css'
  
 export default function CarouselDelHeader() {
   return (
     <Carousel
-      className=" h-[99vh]" autoplay loop
+      className=" h-[99vh]" id="miSlider" autoplay loop
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
