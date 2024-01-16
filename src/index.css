@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*todo  AQUÍ CREO MIS CLASES PERSONALIZADAS */
+.itemsDelNav a:hover{
+    color: orange;
+}
