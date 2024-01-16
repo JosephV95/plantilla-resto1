@@ -22,17 +22,17 @@ export default function CarouselDelHeader() {
       <img
         src="../img/slide/slide-1.jpg"
         alt="image 1"
-        className="h-full w-full object-cover object-top"
+        className="h-full w-full object-cover object-top z-30"
       />
       <img
         src="../img/slide/slide-2.jpg"
         alt="image 2"
-        className="h-full w-full object-cover object-top"
+        className="h-full w-full object-cover object-top z-30"
       />
       <img
         src="../img/slide/slide-3.jpg"
         alt="image 3"
-        className="h-full w-full object-cover object-top"
+        className="h-full w-full object-cover object-top z-30"
       />
     </Carousel>
   );
