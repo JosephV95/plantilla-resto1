@@ -4,7 +4,7 @@ import './CarouselDelHeader.css'
 export default function CarouselDelHeader() {
   return (
     <Carousel
-      className=" h-[99vh]" id="miSlider" autoplay loop
+      className=" h-[99vh] relative" id="miSlider" autoplay loop
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -19,6 +19,11 @@ export default function CarouselDelHeader() {
         </div>
       )}
     >
+      <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top ">
+        
+        <p>hola carola</p>
+      </div>
+      
       <img
         src="../img/slide/slide-1.jpg"
         alt="image 1"
