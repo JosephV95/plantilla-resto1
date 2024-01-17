@@ -1,5 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
 import './CarouselDelHeader.css'
+import CallToAction from "../CallToAction/CallToAction";
  
 export default function CarouselDelHeader() {
   return (
@@ -21,10 +22,14 @@ export default function CarouselDelHeader() {
     >
       <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top ">
         
-        <p>hola carola</p>
+        <CallToAction tituloEnHTML={<h2 style={{color:"white"}}><span style={{color:"orange"}}>Delicious</span> Restaurant</h2>}  />
       </div>
       
-      <img
+      <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top ">
+        
+        <CallToAction tituloEnHTML={<h2>Miraculous Restaurant</h2>}  />
+      </div>
+      {/* <img
         src="../img/slide/slide-1.jpg"
         alt="image 1"
         className="h-full w-full object-cover object-top z-30"
@@ -38,7 +43,7 @@ export default function CarouselDelHeader() {
         src="../img/slide/slide-3.jpg"
         alt="image 3"
         className="h-full w-full object-cover object-top z-30"
-      />
+      /> */}
     </Carousel>
   );
 }
