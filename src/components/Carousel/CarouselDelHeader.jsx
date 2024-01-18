@@ -20,14 +20,24 @@ export default function CarouselDelHeader() {
         </div>
       )}
     >
-      <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top ">
-        
-        <CallToAction tituloEnHTML={<h2 style={{color:"white"}}><span style={{color:"orange"}}>Delicious</span> Restaurant</h2>}  />
+      <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top">
+        <CallToAction 
+        tituloEnHTML={<h2 style={{color:"white"}}><span style={{color:"orange"}}>Delicious</span> Restaurant</h2>}  
+        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+        />
       </div>
       
-      <div className="h-full w-full bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top ">
-        
-        <CallToAction tituloEnHTML={<h2>Miraculous Restaurant</h2>}  />
+      <div className="h-full w-full bg-[url('../img/slide/slide-2.jpg')] bg-cover bg-top">
+        <CallToAction 
+        tituloEnHTML={<h2>Miraculous Restaurant</h2>}  
+        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+        />
+      </div>
+      <div className="h-full w-full bg-[url('../img/slide/slide-3.jpg')] bg-cover bg-top">
+        <CallToAction 
+        tituloEnHTML={<h2>Miraculous Restaurant</h2>}  
+        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+        />
       </div>
       {/* <img
         src="../img/slide/slide-1.jpg"
