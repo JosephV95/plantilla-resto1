@@ -6,8 +6,8 @@ export default function CallToAction({tituloEnHTML, texto }) {
         {tituloEnHTML}
         <p>{texto}</p>
         <div>
-          <button className='border-[2px] border-orange-400 rounded-full px-7 py-2 bg-black/30 mx-4 hover:bg-orange-400'>Ir al Menú</button>
-          <button className='border-[2px] border-orange-400 rounded-full px-7 py-2 bg-black/30 mx-4 hover:bg-orange-400'>Reservar Mesa </button>
+          <button className='btnCall border-[2px] border-orange-400 rounded-full px-6 py-2 bg-black/30 mx-4 hover:bg-orange-400 uppercase font-semibold mb-2'>Ir al Menú</button>
+          <button className='btnCall border-[2px] border-orange-400 rounded-full px-6 py-2 bg-black/30 mx-4 hover:bg-orange-400 uppercase font-semibold'>Reservar Mesa </button>
         </div>
         
     </div>

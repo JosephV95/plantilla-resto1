@@ -21,31 +21,28 @@ export default function CarouselDelHeader() {
       )}
     >
       <div className="h-full w-full  bg-[url('../img/slide/slide-1.jpg')] bg-cover bg-top "> 
-      <div className="h-full w-full absolute bg-black/40 flex justify-center">
-        <CallToAction 
-        tituloEnHTML={<h2 className="text-3xl" style={{color:"white"}}><span style={{color:"orange"}}>Delicious</span> Restaurant</h2>}  
-        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
-        
-        />
-      </div>
+        <div className="h-full w-full absolute bg-black/40 flex justify-center">
+          <CallToAction 
+          tituloEnHTML={<h2 className="text-3xl" style={{color:"white"}}><span style={{color:"orange"}}>Delicious</span> Restaurant</h2>}  
+          texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+          />
+        </div>
       </div>
       
       <div className="h-full w-full  bg-[url('../img/slide/slide-2.jpg')] bg-cover bg-top "> 
-      <div className="h-full w-full absolute bg-black/40 flex justify-center">
-        <CallToAction 
-        tituloEnHTML={<h2 className="text-3xl">Miraculous Restaurant</h2>}  
-        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
-        
-        />
-      </div>
+        <div className="h-full w-full absolute bg-black/40 flex justify-center">
+          <CallToAction 
+          tituloEnHTML={<h2 className="text-3xl">Miraculous Restaurant</h2>}  
+          texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+          />
+        </div>
       </div>
       <div className="h-full w-full  bg-[url('../img/slide/slide-3.jpg')] bg-cover bg-top "> 
-      <div className="h-full w-full absolute bg-black/40 flex justify-center">
-        <CallToAction 
-        tituloEnHTML={<h2 className="text-3xl">Miraculous Restaurant</h2>}  
-        texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
-        
-        />
+        <div className="h-full w-full absolute bg-black/40 flex justify-center">
+          <CallToAction 
+          tituloEnHTML={<h2 className="text-3xl">Miraculous Restaurant</h2>}  
+          texto={'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.'}
+          />
         </div>
       </div>
       {/* 
