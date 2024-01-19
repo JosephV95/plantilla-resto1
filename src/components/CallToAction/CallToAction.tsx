@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function CallToAction({tituloEnHTML, texto , index}) {
+export default function CallToAction({tituloEnHTML, texto }) {
   return (
-    <div className='w-[80%] md:w-3/5 mx-auto h-full flex flex-col gap-6 justify-center items-center text-white text-center px-4' style={{zIndex:`${index}`}}>
+    <div className='w-[80%] md:w-3/5 mx-auto absolute h-full flex flex-col gap-6 justify-center items-center text-white text-center px-4' >
         {tituloEnHTML}
         <p>{texto}</p>
         <div>
