@@ -10,8 +10,6 @@ import {
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
 
-  
-
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -32,7 +30,7 @@ export default function Nav() {
   }, []);
 
   const navList = (
-    <ul className="mitemsDelNav  t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 items-center">
       <Typography
         as="li"
         variant="small"
@@ -78,7 +76,7 @@ export default function Nav() {
 
   return (
     // class = bg-gradient-to-r from-teal-300 to-green-200
-    <Navbar id="navMio" className="fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" style={{backdropFilter: "none"}}>
+    <Navbar id="navMio" className="fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" style={{backdropFilter: "none", boxShadow:"none"}}>
       <div className="flex items-center justify-between text-gray-200">
         <Typography
           as="a"
@@ -87,7 +85,7 @@ export default function Nav() {
         >
           Delicious
         </Typography>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 ">
           <div className="mr-4 hidden lg:block">{navList}</div>
           <div className="flex items-center gap-x-1">
             <Button variant="text" size="sm" className="hidden lg:inline-block">
