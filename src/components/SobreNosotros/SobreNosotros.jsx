@@ -1,11 +1,11 @@
 export default function SobreNosotros() {
   return (
-    <section className="w-full flex relative columns-1  py-4">
+    <section className="w-full flex relative items-center columns-1  py-16 bg-orange-50">
       <div className="w-5/12 bg-orange-400">
         <img src="../img/about.jpg" alt="imgAbout" className="object-cover" />
       </div>
-      <div className="w-7/12  bg-cyan-500 px-12">
-        <h1>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
+      <div className="w-7/12  bg-cyan-500 px-24 ">
+        <h1 className="text-3xl">Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
