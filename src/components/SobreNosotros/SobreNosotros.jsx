@@ -4,7 +4,7 @@ export default function SobreNosotros() {
       <div className="w-5/12 bg-orange-400">
         <img src="../img/about.jpg" alt="imgAbout" className="object-cover" />
       </div>
-      <div className="w-7/12  bg-cyan-500 px-24 ">
+      <div className="w-7/12  bg-cyan-500 px-24 space-y-4">
         <h1 className="text-3xl">Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
