@@ -1,6 +1,6 @@
 export default function SobreNosotros() {
   return (
-    <section className="w-full flex py-16 columns-1 bg-orange-50">
+    <section className="w-full h-auto flex py-16 columns-1 bg-orange-50">
       <div className="w-[100vw] md:w-5/12  bg-orange-400 ">
         <img src="../img/about.jpg" alt="imgAbout" className="object-cover" />
       </div>
