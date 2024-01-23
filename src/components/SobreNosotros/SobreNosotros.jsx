@@ -1,10 +1,10 @@
-import { Card, CardBody, CardHeader, Typography } from "@material-tailwind/react";
+// import { Card, CardBody, CardHeader, Typography } from "@material-tailwind/react";
 
 export default function SobreNosotros() {
   return (
-    <section className="w-full h-auto flex py-16 columns-1 bg-orange-50">
-      {/* <div className="w-[100vw] md:w-5/12  bg-orange-400 ">
-        <img src="../img/about.jpg" alt="imgAbout" className="object-cover" />
+    <section className="w-full h-auto flex flex-wrap py-16 columns-1 bg-orange-50">
+      <div className="w-[100vw] md:w-5/12 min-h-[400px]  bg-orange-400 bg-[url('../img/about.jpg')] bg-cover" >
+        {/* <img src="../img/about.jpg" alt="imgAbout" className="object-cover" /> */}
       </div>
       <div className="w-[100vw] md:w-7/12  bg-cyan-500 px-4 md:x-24 space-y-4 my-auto py-auto">
         <h1 className="text-3xl">Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
@@ -33,9 +33,9 @@ export default function SobreNosotros() {
           fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum
         </p>
-      </div> */}
+      </div>
 
-      <Card className="w-full  flex-row flex-wrap">
+      {/* <Card className="w-full  flex-row flex-wrap">
             <CardHeader
               shadow={false}
               floated={false}
@@ -62,7 +62,7 @@ export default function SobreNosotros() {
               </Typography>
              
             </CardBody>
-          </Card>
+          </Card> */}
     </section>
   );
 }
