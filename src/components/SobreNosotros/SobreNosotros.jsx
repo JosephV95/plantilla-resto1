@@ -16,10 +16,10 @@ export default function SobreNosotros() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <ul className="space-y-1  list-disc ps-5">
+        <ul className="space-y-1  ps-5">
+          <li><box-icon name='check-double' color='#f1ac3c' ></box-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
           <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li>
+          <li><i className='bx bx-check-double h-4'  ></i>
             Ullamco laboris nisi ut aliquip ex ea commodo consequat.Ullamco
             laboris nisi ut aliquip ex ea commodo consequat. Ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
