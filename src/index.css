@@ -6,3 +6,10 @@
 .itemsDelNav a:hover{
     color: orange;
 }
+
+#SobreNosotros .aboutTitulo{
+    color: #5f5950;
+}
+#SobreNosotros .aboutTexto{
+    color: rgb(84, 84, 84);
+}
