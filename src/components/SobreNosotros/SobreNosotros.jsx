@@ -17,11 +17,10 @@ export default function SobreNosotros() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <ul className="space-y-1  ps-5">
-          <li><box-icon name='check-double'></box-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li><box-icon name='check-double'></box-icon> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat.Ullamco
+        <ul className="space-y-1  ps-6">
+          <li><box-icon name='check-double' size='sm'></box-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><box-icon name='check-double' size='sm'></box-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><box-icon name='check-double' size='sm'></box-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat.Ullamco
             laboris nisi ut aliquip ex ea commodo consequat. Ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </li>
