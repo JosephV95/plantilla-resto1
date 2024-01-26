@@ -13,3 +13,16 @@
 #SobreNosotros .aboutTexto{
     color: rgb(84, 84, 84);
 }
+
+/*Estilos para el Footer  */
+.redesLinks a {
+    background-color: rgb(74, 74, 74);
+    padding: 1.2rem;
+    border-radius: 50%;
+    
+   
+}
+
+.redesLinks a:hover{
+    background: #ffb03b;
+}

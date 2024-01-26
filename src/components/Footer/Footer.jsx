@@ -5,21 +5,18 @@ export default function Footer() {
         <h1 className="text-orange-500 text-3xl">Delicious</h1>
         <p className="text-">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
 
-        <div><p>Aqui iran las redes sociales.</p></div>
+        <div className="redesLinks flex flex-row gap-4 justify-center">
+          <a href="https://es-la.facebook.com"  target="_blank" rel="noopener noreferrer" ><box-icon type='logo' name='facebook' color='#f8f8f8'></box-icon></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" ><box-icon name='instagram' type='logo' color='#f8f8f8'></box-icon></a>
+          <a href="" target="_blank" rel="noopener noreferrer" ><box-icon name='whatsapp' type='logo' color='#f8f8f8'></box-icon></a>
+          <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer" ><box-icon name='twitter' type='logo' color='#f8f8f8'></box-icon></a>
+
+        </div>
 
         <p>© Copyright Delicious. All Rights Reserved</p>
         <p>Creado por <span className="text-deep-orange-300"><a>José Vilte</a></span></p>
       </div>
       
-      
-      {/* <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-2">
-        <p className=" h-screen bg-red-400">hola mundo</p>
-        <p className=" h-80 bg-blue-400">hola mundo 2</p>
-        <p className=" h-80 bg-green-400">hola mundo 3</p>
-        <p className=" h-screen bg-purple-400">hola mundo 4</p>
-        <p className=" h-screen bg-green-400">hola mundo 3</p>
-        <p className=" h-screen bg-blue-400">hola mundo 2</p>
-      </div> */}
     </div>
   )
 }
