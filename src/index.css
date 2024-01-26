@@ -16,11 +16,21 @@
 
 /*Estilos para el Footer  */
 .redesLinks a {
-    background-color: rgb(74, 74, 74);
+    background: #46423b;
     padding: 1.2rem;
     border-radius: 50%;
-    
-   
+    display: inline-block;
+    color: #d45e5e;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 1;
+    padding: 6px 0 0 0;
+    /* margin-right: 4px; */
+    /* text-align: center; */
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
 }
 
 .redesLinks a:hover{
