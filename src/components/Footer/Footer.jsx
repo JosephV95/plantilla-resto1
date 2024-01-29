@@ -10,11 +10,10 @@ export default function Footer() {
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" ><box-icon name='instagram' type='logo' color='#f8f8f8' size='md'></box-icon></a>
           <a href="" target="_blank" rel="noopener noreferrer" ><box-icon name='whatsapp' type='logo' color='#f8f8f8' size='md'></box-icon></a>
           <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer" ><box-icon name='twitter' type='logo' color='#f8f8f8' size='md'></box-icon></a>
-
         </div>
 
         <p>© Copyright Delicious. All Rights Reserved</p>
-        <p>Creado por <span className="text-deep-orange-300"><a>José Vilte</a></span></p>
+        <p>Creado por <span className="text-deep-orange-300"><a href="https://viltejosedev.netlify.app">José Vilte</a></span></p>
       </div>
       
     </div>
