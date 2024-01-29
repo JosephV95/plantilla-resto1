@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
 
         <p>© Copyright Delicious. All Rights Reserved</p>
-        <p>Creado por <span className="text-deep-orange-300"><a href="https://viltejosedev.netlify.app">José Vilte</a></span></p>
+        <p>Creado por <span className="text-deep-orange-300"><a href="https://viltejosedev.netlify.app" target="_blank" rel="noopener noreferrer">José Vilte</a></span></p>
       </div>
       
     </div>
