@@ -11,7 +11,7 @@
     color: #5f5950;
 }
 #SobreNosotros .aboutTexto{
-    color: rgb(84, 84, 84);
+    color: #68645e;
 }
 
 /*Estilos para el Footer  */
@@ -33,13 +33,32 @@
 }
 
 /* Estilo para el hero  */
+
+
 .cardHero{
     padding: 50px 30px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.18);
-    transition-duration: 0.4s;
-
+    color: #5f5950;
+    transition-duration: 0.3s;
+    p{
+        color: #68645e;
+    }
 }
+.cardHero .cardNumero{
+    color: #ffb03b;
+    transition-duration: 0.3s;
+}
+.cardHero p{
+    /* color: #68645e; */
+}
+
 .cardHero:hover{
     background-color: #ffb03b;
     color: white;
 }
+.cardHero:hover .cardNumero{
+    color: white;
+}
+
+
+
