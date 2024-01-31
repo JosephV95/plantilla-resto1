@@ -11,7 +11,7 @@ export default function Hero() {
 
       <div className="flex flex-row flex-wrap gap-6 justify-center">
         <div className="cardHero w-3/12 space-y-5">
-          <h2 className="text-3xl font-semibold cardNumero">01</h2>
+          <span className="text-3xl font-semibold text-[#fabf66]">01</span>
           <h2 className="text-2xl font-bold">Lorem Impsum</h2>
           <p>
             Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="cardHero w-3/12 space-y-5">
-          <h2 className="text-3xl font-semibold cardNumero">02</h2>
+          <span className="text-3xl font-semibold text-[#fabf66]">02</span>
           <h2 className="text-2xl font-bold">Repellat Nihil</h2>
           <p>
             Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt
@@ -27,7 +27,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="cardHero w-3/12 space-y-5">
-          <h2 className="text-3xl font-semibold cardNumero">03</h2>
+          <span className="text-3xl font-semibold text-[#fabf66]">03</span>
           <h2 className="text-2xl font-bold">Faker</h2>
           <p>
             Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et

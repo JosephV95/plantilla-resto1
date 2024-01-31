@@ -14,7 +14,7 @@
     color: #68645e;
 }
 
-/*Estilos para el Footer  */
+/** Estilos para el Footer  */
 .redesLinks a {
     background: #46423b;
     display: inline-block;
@@ -23,7 +23,6 @@
     height: 50px;
     border-radius: 50%;
     transition: 0.3s;
-
     /* font-size: 18px;
     line-height: 1; */
 }
@@ -32,32 +31,31 @@
     background: #ffb03b;
 }
 
-/* Estilo para el hero  */
-
-
+/** Estilo para el hero  */
 .cardHero{
     padding: 50px 30px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
     color: #5f5950;
     transition-duration: 0.3s;
-    p{
-        color: #68645e;
-    }
 }
-.cardHero .cardNumero{
-    color: #ffb03b;
-    transition-duration: 0.3s;
+/* .cardHero span{
+    color: #fabf66;
+} */
+.cardHero h2{
+    color: #6c665c;
 }
 .cardHero p{
-    /* color: #68645e; */
+    color: #aaaaaa;
 }
 
 .cardHero:hover{
     background-color: #ffb03b;
-    color: white;
+    padding: 40px 30px 60px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.cardHero:hover .cardNumero{
-    color: white;
+.cardHero:hover span, .cardHero:hover h2,
+.cardHero:hover p{
+    color: #fff;
 }
 
 
