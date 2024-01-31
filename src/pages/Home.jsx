@@ -5,7 +5,7 @@ import SobreNosotros from "../components/SobreNosotros/SobreNosotros";
 
 export default function Home() {
   return (
-    <div className="container max-w-full bg-teal-50 ">
+    <div className="container max-w-full ">
       <CarouselDelHeader />
       <SobreNosotros />
       <Hero />
