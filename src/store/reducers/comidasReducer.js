@@ -8,8 +8,7 @@ const initialState = {
 const comidasReducer = createReducer( initialState, (builder)=>{
     builder
     .addCase(comidasActions.obtener_comidas, (state, action)=>{
-        let nuevoEstado={...state, comidas: action.payload}
-        return nuevoEstado
+        return {...state, comidas: action.payload}
     })
 })
 
