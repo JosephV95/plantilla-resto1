@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 
 export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
-  console.log(comidasStore);
+  // console.log(comidasStore);
 
   return (
     <section className="w-full min-h-[50vh] py-16 space-y-5">
@@ -16,11 +16,11 @@ export default function MenuDelResto() {
                 <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline ">Entradas</li>
             </ul>
         </div>
+
         {comidasStore.map((comida, key)=>(
-          <p key={key}>{comida.nombre}</p>
+          <p key={key} className="inline px-2 mx-5 bg-orange-200 rounded-md">{comida.nombre}</p>
         ))
         }
-
 
     </section>
   )

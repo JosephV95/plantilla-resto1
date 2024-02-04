@@ -13,11 +13,8 @@ export default function Home() {
 
   useEffect(() => {
     let data = []
-    traerComidas().then(res=> {data= res; 
-      dispatch(comidasActions.obtener_comidas(data))} )
-    // dispatch(comidasActions.obtener_comidas(data))
-    // console.log(data);
-    
+    traerComidas().then(res=> {
+      dispatch(comidasActions.obtener_comidas(res))} )
   }, []);
 
   return (
