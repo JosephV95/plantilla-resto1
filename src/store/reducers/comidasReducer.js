@@ -2,7 +2,9 @@ import { createReducer } from "@reduxjs/toolkit";
 import comidasActions from "../actions/comidasActions";
 
 const initialState = {
-    comidas: []
+    comidas: [
+        {name: "randj"}
+    ]
 }
 
 const comidasReducer = createReducer( initialState, (builder)=>{

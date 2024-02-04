@@ -3,6 +3,6 @@ import comidasReducer from "./reducers/comidasReducer";
 
 export const storeRestaurant = configureStore({
     reducer: {
-        menuComidasReducer: comidasReducer
+        comidasReducer: comidasReducer
     }
 })

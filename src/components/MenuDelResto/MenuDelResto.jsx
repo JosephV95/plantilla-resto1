@@ -1,5 +1,9 @@
+import { useSelector } from "react-redux"
 
 export default function MenuDelResto() {
+  const comidasStore = useSelector(store => store.comidasReducer.comidas)
+  console.log(comidasStore);
+
   return (
     <section className="w-full min-h-[50vh] py-16 space-y-5">
         <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
