@@ -12,7 +12,11 @@ export default function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    traerComidas().then(res=> dispatch(comidasActions.obtener_comidas(res)) )
+    let data = []
+    traerComidas().then(res=> {data= res; 
+      dispatch(comidasActions.obtener_comidas(data))} )
+    // dispatch(comidasActions.obtener_comidas(data))
+    // console.log(data);
     
   }, []);
 

@@ -16,6 +16,10 @@ export default function MenuDelResto() {
                 <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline ">Entradas</li>
             </ul>
         </div>
+        {comidasStore.map((comida, key)=>(
+          <p key={key}>{comida.nombre}</p>
+        ))
+        }
 
 
     </section>
