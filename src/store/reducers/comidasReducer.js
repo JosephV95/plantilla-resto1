@@ -11,7 +11,7 @@ const initialState = {
 const comidasReducer = createReducer( initialState, (builder)=>{
     builder
     .addCase(comidasActions.obtener_comidas, (state, action)=>{
-        console.log(action.payload);
+        // console.log(action.payload);
         return {...state, comidas: action.payload}
     })
 })
