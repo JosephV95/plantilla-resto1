@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import ComidaItem from "./ComidaItem"
 
 export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
@@ -18,7 +19,8 @@ export default function MenuDelResto() {
         </div>
 
         {comidasStore.map((comida, key)=>(
-          <p key={key} className="inline px-2 mx-5 bg-orange-200 rounded-md">{comida.nombre}</p>
+          // <p key={key} className="inline px-2 mx-5 bg-orange-200 rounded-md">{comida.nombre}</p>
+          <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
         ))
         }
 
