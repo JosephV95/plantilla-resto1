@@ -3,7 +3,7 @@
 export default function ComidaItem({nombre, img, descripcion, precio}) {
   return (
     <div className="w-[49%] flex flex-row justify-center">
-        <div className=" relative">
+        <div className="">
             <img src={img} alt={nombre} className="w-20 h-20 object-cover rounded-full" />
         </div>
         <div className="w-10/12 px-3">
