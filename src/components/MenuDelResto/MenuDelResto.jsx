@@ -18,11 +18,12 @@ export default function MenuDelResto() {
             </ul>
         </div>
 
-        {comidasStore.map((comida, key)=>(
-          // <p key={key} className="inline px-2 mx-5 bg-orange-200 rounded-md">{comida.nombre}</p>
-          <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
-        ))
-        }
+        <div className="w-full flex flex-row flex-wrap">
+          {comidasStore.slice(0, 9).map((comida, key)=>(
+            <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
+          ))
+          }
+        </div>
 
     </section>
   )
