@@ -12,7 +12,6 @@ export default function Home() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    let data = []
     traerComidas().then(res=> {
       dispatch(comidasActions.obtener_comidas(res))} )
   }, []);
