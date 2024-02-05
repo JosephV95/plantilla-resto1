@@ -18,12 +18,14 @@ export default function MenuDelResto() {
             </ul>
         </div>
 
-        <div className="w-full flex flex-row flex-wrap">
-          {comidasStore.slice(0, 9).map((comida, key)=>(
-            <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
-          ))
-          }
-        </div>
+        {/* <div className="w-full columns-2 flex flex-row flex-wrap justify-between px-24 gap-y-3"> */}
+          <div className="w-full flex flex-row flex-wrap  justify-between lg:px-24 gap-y-4">
+            {comidasStore.slice(0, 19).map((comida, key)=>(
+              <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
+            ))
+            }
+          </div>
+        {/* </div> */}
 
     </section>
   )
