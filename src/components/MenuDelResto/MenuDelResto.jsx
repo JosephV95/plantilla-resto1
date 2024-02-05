@@ -19,7 +19,7 @@ export default function MenuDelResto() {
         </div>
 
         {/* <div className="w-full columns-2 flex flex-row flex-wrap justify-between px-24 gap-y-3"> */}
-          <div className="w-full flex flex-row flex-wrap  justify-between lg:px-24 gap-y-4">
+          <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24  gap-y-5">
             {comidasStore.slice(0, 19).map((comida, key)=>(
               <ComidaItem key={key} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio}></ComidaItem>
             ))
