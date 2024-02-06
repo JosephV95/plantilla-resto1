@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="w-full min-h-[70vh] text-center flex flex-col justify-center items-center gap-6">
+    <section className="w-full py-16 text-center flex flex-col justify-center items-center gap-6">
       {/* <div className="flex flex-col justify-center items-center"> */}
       <h1 className="text-3xl font-bold text-[#5f5950]">¿Porque elegir <span className="text-[#ffb03b]">Delicious?</span></h1>
       <p className="w-11/12 lg:w-5/12 text-[#5f5950] ">
