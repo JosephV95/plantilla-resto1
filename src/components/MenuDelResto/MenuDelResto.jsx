@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import Isotope from "isotope-layout";
 import { useSelector } from "react-redux";
+import ComidaItem from "./ComidaItem";
 
 export default function MenuDelResto() {
+  const comidasStore = useSelector(store => store.comidasReducer.comidas)
+
+
   const [filter, setFilter] = useState('*');
   const gridRef = useRef(null);
   let iso;
-  const comidasStore = useSelector(store => store.comidasReducer.comidas)
   // console.log(comidasStore);
 
   useEffect(() => {
@@ -63,10 +66,11 @@ export default function MenuDelResto() {
         <button onClick={() => handleFilter('.tacos')}>Tacos</button>
       </div>
       <div ref={gridRef} className="grid">
-        {comidasStore.map((comida, index) => (
-          <div key={index} className={`grid-item ${comida.categoria} bg-green-300 rounded-full mx-3 inline`}>
-            {comida.nombre}
-          </div>
+        {comidasStore.slice(0,15).map((comida, index) => (
+          <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
+          // <div key={index} className={`grid-item ${comida.categoria} bg-green-300 rounded-full mx-3 inline`}>
+          //   {comida.nombre}
+          // </div>
         ))}
       </div>
     </div>

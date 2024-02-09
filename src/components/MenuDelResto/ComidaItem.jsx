@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 
-export default function ComidaItem({nombre, img, descripcion, precio}) {
+export default function ComidaItem({nombre, img, descripcion, precio, categoria}) {
   return (
-    <div className="w-[100%] lg:w-[49%] flex flex-row justify-center">
+    <div className={`w-[100%] lg:w-[49%] flex flex-row justify-center  grid-item ${categoria}`}>
         <div className="">
             <img src={img} alt={nombre} className="w-14 sm:w-20   object-cover rounded-full" />
         </div>
