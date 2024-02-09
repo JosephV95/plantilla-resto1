@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Isotope from "isotope-layout";
+
 import { useSelector } from "react-redux";
 import ComidaItem from "./ComidaItem";
 
@@ -9,7 +10,7 @@ export default function MenuDelResto() {
 
   const [filter, setFilter] = useState('*');
   const gridRef = useRef(null);
-  let iso;
+  let iso ;
   // console.log(comidasStore);
 
   useEffect(() => {
@@ -18,20 +19,18 @@ export default function MenuDelResto() {
       layoutMode: 'fitRows',
     });
 
+    
+
     return () => {
       iso.destroy();
     };
   }, []);
 
-  useEffect(() => {
-    if (iso) {
-      iso.arrange({ filter });
-    }
-  }, [filter]);
 
   const handleFilter = (newFilter) => {
-    console.log(newFilter);
-    setFilter(newFilter);
+    if (iso) {
+      iso.arrange({ filter: newFilter });
+    }
   };
 
   return (
@@ -56,7 +55,7 @@ export default function MenuDelResto() {
     //   </div>
     // </section>
     <div>
-      <div>
+      <div id="menu-flters">
         <button onClick={() => handleFilter('*')}>Todas</button>
         <button onClick={() => handleFilter('.carnes')}>Carnes</button>
         <button onClick={() => handleFilter('.pastas')}>Pastas</button>
@@ -65,13 +64,12 @@ export default function MenuDelResto() {
         <button onClick={() => handleFilter('.sushi')}>Sushi</button>
         <button onClick={() => handleFilter('.tacos')}>Tacos</button>
       </div>
-      <div ref={gridRef} className="grid">
+      <div ref={gridRef} className="grid  row menu-container">
+      <div className="w-full py-3 flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24 gap-y-5">
         {comidasStore.slice(0,15).map((comida, index) => (
           <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
-          // <div key={index} className={`grid-item ${comida.categoria} bg-green-300 rounded-full mx-3 inline`}>
-          //   {comida.nombre}
-          // </div>
         ))}
+      </div>
       </div>
     </div>
   )
