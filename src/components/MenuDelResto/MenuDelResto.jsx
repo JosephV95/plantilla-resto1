@@ -6,16 +6,20 @@ import { useEffect } from "react";
 export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
 
+  let filterizr;
   useEffect(() => {
-    const filterizr = new Filterizr('.filter-container', options);
+    try {
+      filterizr = new Filterizr('.filter-container', options);  
+    } catch (error) {
+      console.log(error);
+    }
+    
     return () => filterizr.destroy();
   }, [comidasStore]); // Reinitialize Filterizr when comidasStore changes
 
   const options = {
     // Tus opciones de configuración de Filterizr aquí...
   };
-
-   
 
   return (
     <section className="w-full min-h-[50vh] py-16 space-y-5">
@@ -30,9 +34,9 @@ export default function MenuDelResto() {
         </ul>
       </div>
 
-      <div className="filter-container">
+      <div className="filter-container w-full">
         <div className="w-full py-3 flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24 gap-y-5">
-          {comidasStore.slice(0, 9).map((comida, index) => (
+          {comidasStore.slice(0, 10).map((comida, index) => (
             <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
           ))}
         </div>
