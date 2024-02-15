@@ -5,17 +5,13 @@ import { useEffect } from "react";
 
 export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
-
-  let filterizr;
+  
   useEffect(() => {
-    try {
-      filterizr = new Filterizr('.filter-container', options);  
-    } catch (error) {
-      console.log(error);
-    }
+      let filterizr = new Filterizr('.filter-container', options);  
+   
     
     return () => filterizr.destroy();
-  }, [comidasStore]); // Reinitialize Filterizr when comidasStore changes
+  }, []); // Reinitialize Filterizr when comidasStore changes
 
   const options = {
     // Tus opciones de configuración de Filterizr aquí...
@@ -35,7 +31,7 @@ export default function MenuDelResto() {
       </div>
 
       <div className="filter-container w-full">
-        <div className="w-full py-3 flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24 gap-y-5">
+        <div className="w-full grid-cols-2 flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24 gap-y-5">
           {comidasStore.slice(0, 10).map((comida, index) => (
             <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
           ))}
