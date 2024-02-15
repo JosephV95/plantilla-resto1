@@ -6,6 +6,7 @@ import SobreNosotros from "../components/SobreNosotros/SobreNosotros";
 import { traerComidas } from "../service/comidasService";
 import { useDispatch } from "react-redux";
 import comidasActions from "../store/actions/comidasActions";
+import EventosPrivados from "../components/Eventos/EventosPrivados";
 
 
 export default function Home() {
@@ -22,6 +23,8 @@ export default function Home() {
       <SobreNosotros />
       <Hero />
       <MenuDelResto />
+
+      <EventosPrivados />
     </div>
   );
 }
