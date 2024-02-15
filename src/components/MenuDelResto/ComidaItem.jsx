@@ -3,7 +3,7 @@
 export default function ComidaItem({nombre, img, descripcion, precio, categoria}) {
   return (
     <div className={`w-[100%] lg:w-[45%] flex flex-row justify-center   filtr-item`} data-category={categoria}>
-        <div className="1/12">
+        <div className="">
             <img src={img} alt={nombre} className="w-14 sm:w-20   object-cover rounded-full" />
         </div>
         <div className="w-9/12 ps-3">
