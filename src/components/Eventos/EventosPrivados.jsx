@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-    <section className="w-full h-[70vh] bg-[url('../img/events-bg.jpg')]">
+    <section className="w-full max-h-[70vh] bg-[url('../img/events-bg.jpg')] bg-cover bg-center py-20">
       <Carousel className="">
 
         <div>hola</div>
