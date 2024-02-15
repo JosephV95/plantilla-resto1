@@ -9,7 +9,6 @@ export default function MenuDelResto() {
   useEffect(() => {
       let filterizr = new Filterizr('.filter-container', options);  
    
-    
     return () => filterizr.destroy();
   }, []); // Reinitialize Filterizr when comidasStore changes
 
@@ -18,7 +17,7 @@ export default function MenuDelResto() {
   };
 
   return (
-    <section className="w-full min-h-[50vh] py-16 space-y-5">
+    <section className="w-full  py-16 space-y-5">
       <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
 
       <div>
@@ -31,7 +30,7 @@ export default function MenuDelResto() {
       </div>
 
       <div className="filter-container w-full">
-        <div className="w-full grid-cols-2 flex flex-row flex-wrap justify-center lg:justify-between px-2 sm:px-8 lg:px-24 gap-y-5">
+        <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between ">
           {comidasStore.slice(0, 10).map((comida, index) => (
             <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
           ))}
