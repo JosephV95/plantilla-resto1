@@ -3,9 +3,12 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-    <section className="w-full h-[40rem] max-h-[70vh] bg-[url('../img/events-bg.jpg')] bg-cover bg-center py-20 flex flex-col items-center ">
+    <section className="w-full h-[40rem] max-h-[70vh] relative bg-[url('../img/events-bg.jpg')] bg-cover bg-center py-20 flex flex-col items-center ">
+      <div className="w-full h-full absolute top-0 bg-black/70 py-16">
+
+      
       <h2 className="text-white text-3xl font-bold">Eventos privados personales</h2>
-      <Carousel className="">
+      <Carousel className=" h-full">
 
         <div>hola</div>
         <div>Carola</div>
@@ -26,6 +29,7 @@ export default function EventosPrivados() {
         className="h-full w-full object-cover"
       /> */}
       </Carousel>
+      </div>
     </section>
   );
 }
