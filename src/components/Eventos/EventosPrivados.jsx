@@ -26,10 +26,10 @@ export default function EventosPrivados() {
         )}>
 
           <section className="flex justify-center mt-8 mb-12 gap-x-8">
-            <div className="w-5/12">
+            <div className="w-11/12 lg:w-5/12">
               <img src="../img/events/event-custom.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-5/12 text-white space-y-3">
+            <div className="w-11/12 lg:w-5/12 text-white space-y-3">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
@@ -38,10 +38,10 @@ export default function EventosPrivados() {
           </section>
 
           <section className="flex justify-center mt-8 mb-12 gap-x-8">
-            <div className="w-5/12">
+            <div className="w-11/12 lg:w-5/12">
               <img src="../img/events/event-private.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-5/12 text-white space-y-3">
+            <div className="w-11/12 lg:w-5/12 text-white space-y-3">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
@@ -50,10 +50,10 @@ export default function EventosPrivados() {
           </section>
 
           <section className="flex justify-center mt-8 mb-12 gap-x-8">
-            <div className="w-5/12">
+            <div className="w-11/12 lg:w-5/12">
               <img src="../img/events/event-birthday.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-5/12 text-white space-y-3">
+            <div className="w-11/12 lg:w-5/12 text-white space-y-3">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
