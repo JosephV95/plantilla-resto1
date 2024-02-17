@@ -8,7 +8,8 @@ export default function EventosPrivados() {
 
       
         <h2 className="text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> en nuestro Restaurante</h2>
-        <Carousel className=" " loop nextArrow={false} prevArrow={false}
+        <Carousel className=" " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
+
         //! navigation es un atributo para personalizar los botones inferiores del carousel (es propio de Material-tailwind) 
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -59,21 +60,7 @@ export default function EventosPrivados() {
               <p className="text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut nobis nesciunt nisi repellendus vero doloribus porro culpa a voluptatibus, aspernatur molestias cupiditate adipisci perferendis! Perspiciatis numquam blanditiis placeat quidem!</p>
             </div>
           </section>
-        {/* <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        /> */}
+        
         </Carousel>
       </article>
     </main>
