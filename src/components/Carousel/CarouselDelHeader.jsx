@@ -45,12 +45,7 @@ export default function CarouselDelHeader() {
           />
         </div>
       </div>
-      {/* 
-      <img
-        src="../img/slide/slide-3.jpg"
-        alt="image 3"
-        className="h-full w-full object-cover object-top z-50"
-      /> */}
+      
     </Carousel>
   );
 }
