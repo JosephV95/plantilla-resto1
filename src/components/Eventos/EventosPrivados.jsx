@@ -3,11 +3,10 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-    // <main className="w-full h-[50rem]  relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-20 flex flex-col items-center ">
-      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center " id="caroEvents">
+      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center " id="carouselEnEventos">
 
-        <h2 className=" z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> en nuestro Restaurante</h2>
-        <Carousel className="z-20  " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
+        <h2 className="z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> con nosotros</h2>
+        <Carousel className="z-20 " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
 
         //! navigation es un atributo para personalizar los botones inferiores del carousel (es propio de Material-tailwind) 
         navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -62,6 +61,5 @@ export default function EventosPrivados() {
         
         </Carousel>
       </article>
-    // </main>
   );
 }
