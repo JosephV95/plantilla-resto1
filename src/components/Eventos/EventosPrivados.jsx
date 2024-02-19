@@ -3,12 +3,11 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-    <main className="w-full h-[40rem]  relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-20 flex flex-col items-center ">
-      <article className="w-full h-full absolute top-0 bg-black/70 py-16">
+    // <main className="w-full h-[50rem]  relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-20 flex flex-col items-center ">
+      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center " id="caroEvents">
 
-      
-        <h2 className="text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> en nuestro Restaurante</h2>
-        <Carousel className=" " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
+        <h2 className=" z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> en nuestro Restaurante</h2>
+        <Carousel className="z-20  " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
 
         //! navigation es un atributo para personalizar los botones inferiores del carousel (es propio de Material-tailwind) 
         navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -25,7 +24,7 @@ export default function EventosPrivados() {
           </div>
         )}>
 
-          <section className="flex flex-wrap justify-center mt-8 mb-12 gap-x-8">
+          <section className="flex flex-wrap  justify-center mt-8 mb-12 gap-x-8">
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-custom.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
@@ -63,6 +62,6 @@ export default function EventosPrivados() {
         
         </Carousel>
       </article>
-    </main>
+    // </main>
   );
 }
