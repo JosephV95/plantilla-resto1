@@ -15,7 +15,7 @@
     color: #68645e;
 }
 
-/** Estilos para el Footer  */
+/*? Estilos para el Footer  */
 .redesLinks a {
     background: #46423b;
     display: inline-block;
@@ -61,14 +61,14 @@
 }
 
 /*? Estilos para el Carousel en Eventos privados  */
-#caroEvents::before{
+#carouselEnEventos::before{
     content: '';
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.774);
-    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
 }
 
 
