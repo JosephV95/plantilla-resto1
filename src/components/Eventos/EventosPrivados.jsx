@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center " id="carouselEnEventos">
+      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center" id="carouselEnEventos">
 
         <h2 className="z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> con nosotros</h2>
         <Carousel className="z-20 " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
@@ -23,7 +23,7 @@ export default function EventosPrivados() {
           </div>
         )}>
 
-          <section className="flex flex-wrap  justify-center mt-8 mb-12 gap-x-8">
+          <section className="flex flex-wrap  justify-center mt-8 mb-12 gap-x-8 gap-y-3">
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-custom.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
@@ -35,7 +35,7 @@ export default function EventosPrivados() {
             </div>
           </section>
 
-          <section className="flex flex-wrap justify-center mt-8 mb-12 gap-x-8">
+          <section className="flex flex-wrap justify-center mt-8 mb-12 gap-x-8 gap-y-3">
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-private.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
@@ -47,7 +47,7 @@ export default function EventosPrivados() {
             </div>
           </section>
 
-          <section className="flex flex-wrap justify-center mt-8 mb-12 gap-x-8">
+          <section className="flex flex-wrap justify-center mt-8 mb-12 gap-x-8 gap-y-3">
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-birthday.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
