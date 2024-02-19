@@ -6,7 +6,7 @@ export default function EventosPrivados() {
       <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center" id="carouselEnEventos">
 
         <h2 className="z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> con nosotros</h2>
-        <Carousel className="z-20 " loop nextArrow={false} prevArrow={false} autoplay autoplayDelay={7000}
+        <Carousel className="z-20 " loop  prevArrow={false} autoplay autoplayDelay={7000}
 
         //! navigation es un atributo para personalizar los botones inferiores del carousel (es propio de Material-tailwind) 
         navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -27,10 +27,16 @@ export default function EventosPrivados() {
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-custom.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-3">
+            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-4">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
+              
+              <ul className="ps-6 space-y-2">
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+              </ul>
+
               <p className="text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut nobis nesciunt nisi repellendus vero doloribus porro culpa a voluptatibus, aspernatur molestias cupiditate adipisci perferendis! Perspiciatis numquam blanditiis placeat quidem!</p>
             </div>
           </section>
@@ -39,10 +45,17 @@ export default function EventosPrivados() {
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-private.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-3">
+            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-4">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
+
+              <ul className="ps-6 space-y-2">
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+              </ul>
+
               <p className="text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut nobis nesciunt nisi repellendus vero doloribus porro culpa a voluptatibus, aspernatur molestias cupiditate adipisci perferendis! Perspiciatis numquam blanditiis placeat quidem!</p>
             </div>
           </section>
@@ -51,10 +64,15 @@ export default function EventosPrivados() {
             <div className="w-11/12 sm:w-4/5 lg:w-5/12">
               <img src="../img/events/event-birthday.jpg" alt="imgEventos" className="h-full w-full object-cover" />
             </div>
-            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-3">
+            <div className="w-11/12 sm:w-4/5 lg:w-5/12 text-white space-y-4">
               <h3 className="text-2xl text-orange-300 font-semibold">Fiestas Personalizadas</h3>
               <h3 className="text-2xl font-semibold underline underline-offset-8 decoration-orange-300">$3000</h3>
               <p className="italic text-[1.1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus architecto dolorem praesentium molestiae amet, quia optio accusantium ab adipisci quidem, aut quam expedita eum porro deserunt libero consectetur! Totam, officia.</p>
+              <ul className="ps-6 space-y-2">
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+                <li><box-icon name='check-circle' color='#ffb03b'></box-icon> Le ofercemos a tu invitados la mejor atencion y cuentan con la seguridad del local.</li>
+              </ul>
+
               <p className="text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ut nobis nesciunt nisi repellendus vero doloribus porro culpa a voluptatibus, aspernatur molestias cupiditate adipisci perferendis! Perspiciatis numquam blanditiis placeat quidem!</p>
             </div>
           </section>
