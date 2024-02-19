@@ -7,6 +7,7 @@ import { traerComidas } from "../service/comidasService";
 import { useDispatch } from "react-redux";
 import comidasActions from "../store/actions/comidasActions";
 import EventosPrivados from "../components/Eventos/EventosPrivados";
+import GalleriaImg from "../components/GalleriaImg/GalleriaImg";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       {/* <MenuDelResto /> */}
 
       <EventosPrivados />
+      <GalleriaImg />
     </div>
   );
 }
