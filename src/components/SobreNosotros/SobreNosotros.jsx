@@ -3,7 +3,7 @@ import './SobreNosotros.css'
 export default function SobreNosotros() {
   return (
     <section className="w-full h-auto flex flex-wrap py-16  bg-orange-50/70" id='SobreNosotros'>
-      <div className="w-[100vw] lg:w-5/12 min-h-[300px]  bg-[url('../img/about.jpg')] bg-cover" >
+      <div className="w-[100vw] lg:w-5/12 min-h-[300px]  bg-[url('../img/events/about.jpg')] bg-cover" >
         {/* <img src="../img/about.jpg" alt="imgAbout" className="object-cover" /> */}
       </div>
       <div className="w-[100vw] lg:w-7/12 px-4 lg:px-16 lg:py-3  space-y-4 ">
