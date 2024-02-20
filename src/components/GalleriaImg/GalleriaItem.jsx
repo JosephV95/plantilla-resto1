@@ -3,9 +3,9 @@
 
 export default function GalleriaItem({urlImg}) {
   return (
-    <div className="w-1/4">
+    <div className="w-full mb-1 overflow-hidden ">
         <a >
-            <img src={urlImg} alt={'Img' + urlImg} className="w-full h-full object-cover"/>
+            <img src={urlImg} alt={'Img' + urlImg} className="w-full h-full object-cover duration-1000 hover:scale-[1.15]"/>
         </a>
 
     </div>
