@@ -2,11 +2,11 @@ import GalleriaItem from "./GalleriaItem";
 
 export default function GalleriaImg() {
   return (
-    <section>
-      <h2>Imagenes nuestras</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam in perferendis quas repudiandae consequuntur, sint quam odio voluptates! Non dignissimos voluptas, itaque necessitatibus impedit fuga sapiente ea ipsum perspiciatis iste?</p>
+    <section className="text-center flex flex-col items-center gap-y-4  my-8 py-3">
+      <h1 className="text-3xl font-semibold text-[#5f5950]">Algunas fotos de <span className="text-[#ffb03b]">Nuestro Restaurante</span></h1>
+      <p className="w-4/5 md:w-3/5 text-lg text-[#68645e]">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
 
-      <article>
+      <article className="sm:columns-2 md:columns-3 lg:columns-4 gap-1 px-4 sm:px-3">
         <GalleriaItem urlImg={'../img/gallery/gallery-1.jpg'} />
         <GalleriaItem urlImg={'../img/gallery/gallery-2.jpg'} />
         <GalleriaItem urlImg={'../img/gallery/gallery-3.jpg'} />
