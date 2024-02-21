@@ -4,7 +4,6 @@ import GalleriaItem from "./GalleriaItem";
 import FsLightbox from "fslightbox-react";
 
 export default function GalleriaImg() {
-  const [toggler, setToggler] = useState(false);
 
   const [lightboxController, setLightboxController] = useState({
 		toggler: false,
@@ -18,7 +17,6 @@ export default function GalleriaImg() {
 		});
 	}
 
-
   return (
     <section className="text-center flex flex-col items-center gap-y-4   my-8 py-3">
       <h1 className="text-3xl font-semibold text-[#5f5950]">Algunas fotos de <span className="text-[#ffb03b]">Nuestro Restaurante</span></h1>
@@ -27,8 +25,6 @@ export default function GalleriaImg() {
       <article className="sm:columns-2 md:columns-3 lg:columns-4 gap-1 px-4 sm:px-3">
       <FsLightbox
         toggler={lightboxController.toggler}
-				
-				slide={lightboxController.slide}
 				sources={[
 					'../img/gallery/gallery-1.jpg',
           '../img/gallery/gallery-2.jpg',
@@ -39,17 +35,16 @@ export default function GalleriaImg() {
           '../img/gallery/gallery-7.jpg',
           '../img/gallery/gallery-8.jpg'
 				]}
+        slide={lightboxController.slide}
 			/>
-       <button onClick={()=>{openLightboxOnSlide(1)}}>hol1</button>
-       <button onClick={()=>{openLightboxOnSlide(5)}}>hol4</button>
-        <GalleriaItem urlImg={'../img/gallery/gallery-1.jpg'} onClick={()=>{openLightboxOnSlide(1)}}/>
-        <GalleriaItem urlImg={'../img/gallery/gallery-2.jpg'} onClick={()=>{openLightboxOnSlide(2)}}/>
-        <GalleriaItem urlImg={'../img/gallery/gallery-3.jpg'} onClick={()=>{openLightboxOnSlide(3)}}/>
-        <GalleriaItem urlImg={'../img/gallery/gallery-4.jpg'} />
-        <GalleriaItem urlImg={'../img/gallery/gallery-5.jpg'} />
-        <GalleriaItem urlImg={'../img/gallery/gallery-6.jpg'} />
-        <GalleriaItem urlImg={'../img/gallery/gallery-7.jpg'} />
-        <GalleriaItem urlImg={'../img/gallery/gallery-8.jpg'} />
+        <GalleriaItem urlImg={'../img/gallery/gallery-1.jpg'}  onClickCreado={()=>{openLightboxOnSlide(1)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-2.jpg'}  onClickCreado={()=>{openLightboxOnSlide(2)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-3.jpg'}  onClickCreado={()=>{openLightboxOnSlide(3)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-4.jpg'}  onClickCreado={()=>{openLightboxOnSlide(4)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-5.jpg'}  onClickCreado={()=>{openLightboxOnSlide(5)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-6.jpg'}  onClickCreado={()=>{openLightboxOnSlide(6)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-7.jpg'}  onClickCreado={()=>{openLightboxOnSlide(7)}}/>
+        <GalleriaItem urlImg={'../img/gallery/gallery-8.jpg'}  onClickCreado={()=>{openLightboxOnSlide(8)}}/>
       </article>
 
     </section>
