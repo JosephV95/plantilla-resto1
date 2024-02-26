@@ -11,36 +11,36 @@ export default function Contacto() {
             <i></i>
             <h4>Location:</h4>
             <p>
-
+              info@example.com
               <br />
-
+              contacto@example.com
             </p>
           </div>
           <div className="w-[25%]">
             <i></i>
             <h4>Location:</h4>
             <p>
-
+              info@example.com
               <br />
-
+              contacto@example.com
             </p>
           </div>
           <div className="w-[25%]">
             <i></i>
             <h4>Location:</h4>
             <p>
-
+              info@example.com
               <br />
-
+              contacto@example.com
             </p>
           </div>
           <div className="w-[25%]">
             <i></i>
             <h4>Location:</h4>
             <p>
-
+              info@example.com
               <br />
-
+              contacto@example.com
             </p>
           </div>
         </div>
