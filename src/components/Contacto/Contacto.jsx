@@ -7,9 +7,9 @@ export default function Contacto() {
       </p>
 
       <article className="w-4/5">
-        <div className="flex flex-wrap">
-          <div className="w-[25%]">
-            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8]">
+        <div className="flex flex-wrap  ">
+          <div className="w-[25%] group">
+            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-red-300">
             <box-icon name='map' color='#ffb03b'></box-icon>
             </i>
             <h4 className="ps-12 text-xl font-semibold text-gray-800">
