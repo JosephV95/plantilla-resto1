@@ -9,8 +9,8 @@ export default function Contacto() {
         <div className="flex flex-wrap">
           <div className="w-[25%]">
             <i></i>
-            <h4>Location:</h4>
-            <p>
+            <h4 className="text-xl font-semibold text-gray-800">Location:</h4>
+            <p className="text-[#68645e]">
               info@example.com
               <br />
               contacto@example.com
@@ -18,8 +18,8 @@ export default function Contacto() {
           </div>
           <div className="w-[25%]">
             <i></i>
-            <h4>Location:</h4>
-            <p>
+            <h4 className="text-xl font-semibold text-gray-800">Location:</h4>
+            <p className="text-[#68645e]">
               info@example.com
               <br />
               contacto@example.com
@@ -27,8 +27,8 @@ export default function Contacto() {
           </div>
           <div className="w-[25%]">
             <i></i>
-            <h4>Location:</h4>
-            <p>
+            <h4 className="text-xl font-semibold text-gray-800">Location:</h4>
+            <p className="text-[#68645e]">
               info@example.com
               <br />
               contacto@example.com
@@ -36,8 +36,8 @@ export default function Contacto() {
           </div>
           <div className="w-[25%]">
             <i></i>
-            <h4>Location:</h4>
-            <p>
+            <h4 className="text-xl font-semibold text-gray-800">Location:</h4>
+            <p className="text-[#68645e]">
               info@example.com
               <br />
               contacto@example.com
