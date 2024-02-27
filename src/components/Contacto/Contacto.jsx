@@ -22,7 +22,7 @@ export default function Contacto() {
       <article className="w-4/5">
         <div className="flex flex-wrap  ">
           <div className="w-[25%] group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-red-300">
+            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300">
             <box-icon name='map' color={isHovered ? '#eeeeee' : '#ffb03b'}></box-icon>
             </i>
             <h4 className="ps-12 text-xl font-semibold text-gray-800">
@@ -34,7 +34,7 @@ export default function Contacto() {
               contacto@example.com
             </p>
           </div>
-          <div className="w-[25%]">
+          <div className="w-[25%]"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8]">
               <box-icon name="time-five" color={isHovered ? '#eeeeee' : '#ffb03b'}></box-icon>
             </i>
@@ -47,7 +47,7 @@ export default function Contacto() {
               contacto@example.com
             </p>
           </div>
-          <div className="w-[25%]">
+          <div className="w-[25%]"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8]">
               <box-icon name="envelope" color={isHovered ? '#eeeeee' : '#ffb03b'}></box-icon>
             </i>
@@ -60,7 +60,7 @@ export default function Contacto() {
               contacto@example.com
             </p>
           </div>
-          <div className="w-[25%]">
+          <div className="w-[25%]"  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8]">
               <box-icon name="phone" color={isHovered ? '#eeeeee' : '#ffb03b'}></box-icon>
             </i>
