@@ -37,7 +37,7 @@ export default function Contacto() {
             onMouseEnter={() => handleMouseEnter("ubicacion")}
             onMouseLeave={() => handleMouseLeave("ubicacion")}
           >
-            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300">
+            <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300 transition-colors duration-500">
               <box-icon
                 name="map"
                 color={hoverStates["ubicacion"] ? "#eeeeee" : "#ffb03b"} 
