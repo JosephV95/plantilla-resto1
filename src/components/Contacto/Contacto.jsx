@@ -24,15 +24,15 @@ export default function Contacto() {
   };
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center px-5">
       <h1 className="text-center">Contactanos</h1>
-      <p className="text-center">
+      <p className="text-center"> 
         Encontranos en nuestro local o contactanos con un mensaje
       </p>
 
-      <article className="w-4/5">
+      <article className="w-[85%] p-7 my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
         <div className="flex flex-wrap  ">
-        <div
+          <div
             className="w-[25%] group"
             onMouseEnter={() => handleMouseEnter("ubicacion")}
             onMouseLeave={() => handleMouseLeave("ubicacion")}
@@ -40,7 +40,7 @@ export default function Contacto() {
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300 transition-colors duration-500">
               <box-icon
                 name="map"
-                color={hoverStates["ubicacion"] ? "#eeeeee" : "#ffb03b"} 
+                color={hoverStates["ubicacion"] ? "#ffffff" : "#ffb03b"} 
                 className="duration-700"
               ></box-icon>
             </i>
@@ -58,7 +58,7 @@ export default function Contacto() {
             onMouseLeave={() => handleMouseLeave("horarios")}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300">
               <box-icon name="time-five" 
-                color={hoverStates["horarios"] ? "#eeeeee" : "#ffb03b"}>
+                color={hoverStates["horarios"] ? "#ffffff" : "#ffb03b"}>
 
               </box-icon>
             </i>
@@ -76,7 +76,7 @@ export default function Contacto() {
             onMouseLeave={() => handleMouseLeave("email")}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300">
               <box-icon name="envelope"
-                color={hoverStates['email'] ? "#eeeeee" : "#ffb03b" }>
+                color={hoverStates['email'] ? "#ffffff" : "#ffb03b" }>
 
               </box-icon>
             </i>
@@ -94,7 +94,7 @@ export default function Contacto() {
             onMouseLeave={() => handleMouseLeave("llamanos")}>
             <i className="w-10 h-10 rounded-full flex justify-center items-center float-left bg-[#fff6e8] group-hover:bg-orange-300">
               <box-icon name="phone" 
-                color={hoverStates['llamanos'] ? "#eeeeee" : "#ffb03b"}>
+                color={hoverStates['llamanos'] ? "#ffffff" : "#ffb03b"}>
 
               </box-icon>
             </i>
