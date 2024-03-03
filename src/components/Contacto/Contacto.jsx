@@ -59,17 +59,18 @@ export default function Contacto() {
 
         <form action="" className="shadow-[0_-5px_10px_rgba(0,0,0,0.1)] mt-1 w-full px-16 py-7">
           <div className="space-y-7 ">
-            <div >
-              <div className="w-[50%] inline border-b border-gray-900/10 pb-12">
+            <div className="columns-2">
+              <div className="border border-gray-900/10">
                 <input type="text" name="" id="" placeholder="Ingresa tu Nombre" 
-                className="rounded-md border-2 p-2 text-gray-600 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-400 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
+                className="w-full rounded-md border-2 p-2 text-gray-600 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-400 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
               </div>
-              <div className="w-[50%] inline">
-                <input type="email" name="" id="" placeholder="Email" className="p-2"/>
+              <div className="">
+                <input type="email" name="" id="" placeholder="Email" 
+                className="w-full rounded-md border-2 p-2 text-gray-600 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-400 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
               </div>
             </div>
             <div >
-              <textarea name="" id="" cols="30" rows="5" placeholder="Dejanos tu mensaje" className="w-full"></textarea>
+              <textarea name="" id="" cols="30" rows="5" placeholder="Dejanos tu mensaje" className="w-full p-2"></textarea>
             </div>
           </div>
         </form>
