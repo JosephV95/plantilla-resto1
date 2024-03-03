@@ -62,11 +62,11 @@ export default function Contacto() {
             <div className="columns-2">
               <div className="border border-gray-900/10">
                 <input type="text" name="" id="" placeholder="Ingresa tu Nombre" 
-                className="w-full rounded-md border-2 p-2 text-gray-600 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-400 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
+                className="w-full rounded-md border-2 p-2 text-gray-700 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
               </div>
               <div className="">
                 <input type="email" name="" id="" placeholder="Email" 
-                className="w-full rounded-md border-2 p-2 text-gray-600 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-400 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
+                className="w-full rounded-md border-2 p-2 text-gray-700 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
               </div>
             </div>
             <div >
