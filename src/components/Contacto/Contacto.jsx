@@ -24,13 +24,13 @@ export default function Contacto() {
   // };
 
   return (
-    <section className="flex flex-col items-center px-5">
+    <section className="flex flex-col items-center px-2 lg:px-5">
       <h1 className="text-center">Contactanos</h1>
       <p className="text-center"> 
         Encontranos en nuestro local o contactanos con un mensaje
       </p>
 
-      <article className="w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
+      <article className=" md:w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
         <div className="flex flex-wrap p-7 ">
           <ItemContacto titulo={"Ubicación"} texto1={"Plaza Independencia"} texto2={"Ciudad, Mendoza"} icono={"map"} />
           <ItemContacto titulo={"Horario"} texto1={"Lunes a Sabado:"} texto2={"10:00 hs. - 23:00 hs."} icono={"time-five"} />
