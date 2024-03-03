@@ -57,7 +57,20 @@ export default function Contacto() {
           
         </div>
 
-        <form action=""></form>
+        <form action="">
+          <div>
+            <div>
+              <input type="text" name="" id="" placeholder="Ingresa tu Nombre" />
+            </div>
+            <div>
+              <input type="email" name="" id="" placeholder="Email"/>
+            </div>
+          </div>
+          <div>
+            <input type="text" name="" id="" />
+          </div>
+          <div></div>
+        </form>
       </article>
     </section>
   );
