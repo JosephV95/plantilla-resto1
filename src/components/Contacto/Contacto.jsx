@@ -30,8 +30,8 @@ export default function Contacto() {
         Encontranos en nuestro local o contactanos con un mensaje
       </p>
 
-      <article className="w-[85%] p-7 my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
-        <div className="flex flex-wrap  ">
+      <article className="w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
+        <div className="flex flex-wrap p-7 ">
           <ItemContacto titulo={"Ubicación"} texto1={"Plaza Independencia"} texto2={"Ciudad, Mendoza"} icono={"map"} />
           <ItemContacto titulo={"Horario"} texto1={"Lunes a Sabado:"} texto2={"10:00 hs. - 23:00 hs."} icono={"time-five"} />
           <ItemContacto titulo={"Email"} texto1={"info@example.com"} texto2={"contact@example.com"} icono={"envelope"} />
@@ -57,17 +57,17 @@ export default function Contacto() {
           
         </div>
 
-        <form action="">
+        <form action="" className="shadow-[0_-5px_10px_rgba(0,0,0,0.1)] mt-1 w-full">
           <div>
-            <div>
-              <input type="text" name="" id="" placeholder="Ingresa tu Nombre" />
+            <div className="w-[50%] inline">
+              <input type="text" name="" id="" placeholder="Ingresa tu Nombre" className="p-2"/>
             </div>
-            <div>
-              <input type="email" name="" id="" placeholder="Email"/>
+            <div className="w-[50%] inline">
+              <input type="email" name="" id="" placeholder="Email" className="p-2"/>
             </div>
           </div>
           <div>
-            <input type="text" name="" id="" />
+            <input type="text" name="" id="" placeholder="Dejanos tu mensaje" className="p-2"/>
           </div>
           <div></div>
         </form>
