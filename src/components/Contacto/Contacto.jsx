@@ -58,19 +58,20 @@ export default function Contacto() {
         </div>
 
         <form action="" className="shadow-[0_-5px_10px_rgba(0,0,0,0.1)] mt-1 w-full px-16 py-7">
-          <div className="space-y-7 ">
+          <div className="space-y-5 ">
             <div className="columns-2">
-              <div className="border border-gray-900/10">
-                <input type="text" name="" id="" placeholder="Ingresa tu Nombre" 
-                className="w-full rounded-md border-2 p-2 text-gray-700 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
+              <div className="">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" 
+                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
               <div className="">
-                <input type="email" name="" id="" placeholder="Email" 
-                className="w-full rounded-md border-2 p-2 text-gray-700 shadow-sm ring-1 ring-inset ring-orange-100 placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-700 sm:text-sm sm:leading-6"/>
+                <input type="email" name="email" id="email" placeholder="Email" 
+                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
             </div>
             <div >
-              <textarea name="" id="" cols="30" rows="5" placeholder="Dejanos tu mensaje" className="w-full p-2"></textarea>
+              <textarea name="mensaje" id="mensajeTexto" cols="30" rows="5" placeholder="Dejanos tu mensaje" 
+              className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4"></textarea>
             </div>
           </div>
         </form>
