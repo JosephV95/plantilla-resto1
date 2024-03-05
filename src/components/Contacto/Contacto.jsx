@@ -57,16 +57,16 @@ export default function Contacto() {
           
         </div>
 
-        <form action="" className="shadow-[0_-5px_10px_rgba(0,0,0,0.1)] mt-1 w-full px-16 py-7">
+        <form action="" className="shadow-[0_-5px_10px_rgba(0,0,0,0.1)] mt-1 w-full px-4 md:px-16 py-7">
           <div className="space-y-5 ">
-            <div className="columns-2">
+            <div className="md:columns-2 space-y-4 md:space-y-0">
               <div className="">
                 <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" 
-                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
+                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-500 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
               <div className="">
                 <input type="email" name="email" id="email" placeholder="Email" 
-                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-600 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
+                className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-500 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
             </div>
             <div >
