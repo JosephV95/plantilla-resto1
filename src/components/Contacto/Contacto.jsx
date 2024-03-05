@@ -31,7 +31,7 @@ export default function Contacto() {
       </p>
 
       <article className=" md:w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
-        <div className="flex flex-wrap p-7 ">
+        <div className="flex flex-wrap justify-evenly px-1 md:px-5 py-7 gap-y-2">
           <ItemContacto titulo={"Ubicación"} texto1={"Plaza Independencia"} texto2={"Ciudad, Mendoza"} icono={"map"} />
           <ItemContacto titulo={"Horario"} texto1={"Lunes a Sabado:"} texto2={"10:00 hs. - 23:00 hs."} icono={"time-five"} />
           <ItemContacto titulo={"Email"} texto1={"info@example.com"} texto2={"contact@example.com"} icono={"envelope"} />
