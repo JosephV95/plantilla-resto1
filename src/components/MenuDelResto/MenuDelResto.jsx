@@ -17,23 +17,25 @@ export default function MenuDelResto() {
   };
 
   return (
-    <section className="w-full  py-16 space-y-5">
-      <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
+    <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed">
+      <div className="py-16 space-y-5 bg-white/80"> 
+        <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
 
-      <div>
-        <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2">
-          <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all">Todas</li>
-          <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes">Carnes</li>
-          <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas">Especiales</li>
-          <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas">Entradas</li>
-        </ul>
-      </div>
+        <div>
+          <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2">
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all">Todas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes">Carnes</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas">Especiales</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas">Entradas</li>
+          </ul>
+        </div>
 
-      <div className="filter-container w-full">
-        <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between ">
-          {comidasStore.slice(0, 10).map((comida, index) => (
-            <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
-          ))}
+        <div className="filter-container w-full">
+          <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between ">
+            {comidasStore.slice(0, 10).map((comida, index) => (
+              <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
+            ))}
+          </div>
         </div>
       </div>
     </section>
