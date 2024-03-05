@@ -32,9 +32,9 @@ export default function Contacto() {
 
       <article className=" md:w-[85%]  my-5 shadow-[0_0_19px_rgba(0,0,0,0.15)]">
         <div className="flex flex-wrap justify-evenly px-1 md:px-5 py-7 gap-y-2">
-          <ItemContacto titulo={"Ubicación"} texto1={"Plaza Independencia"} texto2={"Ciudad, Mendoza"} icono={"map"} />
+          <ItemContacto titulo={"Ubicación"} texto1={"Plaza Independencia"} texto2={"Ciudad de Mendoza"} icono={"map"} />
           <ItemContacto titulo={"Horario"} texto1={"Lunes a Sabado:"} texto2={"10:00 hs. - 23:00 hs."} icono={"time-five"} />
-          <ItemContacto titulo={"Email"} texto1={"info@example.com"} texto2={"contact@example.com"} icono={"envelope"} />
+          <ItemContacto titulo={"Email"} texto1={"info@gmail.com"} texto2={"contact@gmail.com"} icono={"envelope"} />
           <ItemContacto titulo={"Llamanos"} texto1={"+54 9 261 55488 51"} texto2={"+1 5589 55488 51"} icono={"phone"} />
           
           {/* //?  Antes de separar en componentes se uso esta forma para lograr que funcione el efecto hover en el color de los iconos
