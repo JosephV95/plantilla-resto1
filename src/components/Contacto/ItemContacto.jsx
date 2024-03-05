@@ -6,7 +6,7 @@ export default function ItemContacto({ titulo, texto1, texto2, icono }) {
 
   return (
     <div
-      className="md:w-[50%] lg:w-[25%] group"
+      className="w-[71%] sm:w-1/2 md:w-1/2 lg:w-1/4 group"
       onMouseEnter={() => {
         setEfectoHover(true);
       }}
