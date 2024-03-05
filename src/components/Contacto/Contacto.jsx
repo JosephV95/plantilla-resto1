@@ -61,17 +61,20 @@ export default function Contacto() {
           <div className="space-y-5 ">
             <div className="md:columns-2 space-y-4 md:space-y-0">
               <div className="">
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" 
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" required
                 className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-500 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
               <div className="">
-                <input type="email" name="email" id="email" placeholder="Email" 
+                <input type="email" name="email" id="email" placeholder="Email" required
                 className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4 text-gray-700 shadow-sm  placeholder:text-gray-500 focus:ring-3 focus:ring-inset focus:ring-orange-300 sm:text-sm sm:leading-6"/>
               </div>
             </div>
             <div >
-              <textarea name="mensaje" id="mensajeTexto" cols="30" rows="5" placeholder="Dejanos tu mensaje" 
+              <textarea name="mensaje" id="mensajeTexto" cols="30" rows="5" placeholder="Dejanos tu mensaje" required
               className="w-full rounded-md border-2 border-orange-100/70 py-2 px-4"></textarea>
+            </div>
+            <div className="text-center">
+              <button type="submit" className="px-6 py-2.5 bg-orange-300 hover:bg-orange-500 text-white rounded-3xl">Enviar Mensaje</button>
             </div>
           </div>
         </form>
