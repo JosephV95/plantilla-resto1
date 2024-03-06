@@ -87,7 +87,7 @@ export default function Nav() {
 
   return (
     // class = bg-gradient-to-r from-teal-300 to-green-200
-    <Navbar id="navMio"  className= "fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" 
+    <Navbar id="navMio" className="fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" 
     style={{backdropFilter: "none", boxShadow:"none"}}>
       
       <div className="flex items-center justify-between text-gray-200">
