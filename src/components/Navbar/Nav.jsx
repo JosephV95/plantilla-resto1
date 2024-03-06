@@ -17,24 +17,29 @@ export default function Nav() {
     );
     const selectNav = document.getElementById('navMio')
      const scrolled = ()=>{
-      if (window.scrollY > 100 && window.screen.width >= 960) {
-        selectNav.classList.add('bg-black/80')
+      if (window.scrollY > 100) {
+        selectNav.classList.add('bg-black/70')
         selectNav.classList.remove('bg-transparent')
       } else {
-        selectNav.classList.remove('bg-black/80')
+        // if (screen.width >= 960) {
+          selectNav.classList.remove('bg-black/70')
+        // } 
+        
       }
 
     }
     
      window.addEventListener('scroll', scrolled)
   }, []);
-  // React.useEffect(()=>{
-  //   const selectNav = document.getElementById('navMio');
-  //   if(window.screen.width < 960 && openNav){
+  React.useEffect(()=>{
+    const selectNav = document.getElementById('navMio');
+    if(openNav){
+      selectNav.classList.add('bg-black/80')
       
-  //     selectNav.classList.add('bg-orange-500')
-  //   } 
-  // }, [])
+    } else{
+      selectNav.classList.remove('bg-black/80')
+    }
+  })
 
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 items-center">
