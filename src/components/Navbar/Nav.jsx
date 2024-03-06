@@ -17,17 +17,24 @@ export default function Nav() {
     );
     const selectNav = document.getElementById('navMio')
      const scrolled = ()=>{
-      if (window.scrollY > 100) {
-        selectNav.classList.add('bg-black/70')
+      if (window.scrollY > 100 && window.screen.width >= 960) {
+        selectNav.classList.add('bg-black/80')
         selectNav.classList.remove('bg-transparent')
-        
       } else {
-        selectNav.classList.remove('bg-black/70')
+        selectNav.classList.remove('bg-black/80')
       }
-     }
+
+    }
     
      window.addEventListener('scroll', scrolled)
   }, []);
+  // React.useEffect(()=>{
+  //   const selectNav = document.getElementById('navMio');
+  //   if(window.screen.width < 960 && openNav){
+      
+  //     selectNav.classList.add('bg-orange-500')
+  //   } 
+  // }, [])
 
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 items-center">
@@ -76,7 +83,9 @@ export default function Nav() {
 
   return (
     // class = bg-gradient-to-r from-teal-300 to-green-200
-    <Navbar id="navMio" className="fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" style={{backdropFilter: "none", boxShadow:"none"}}>
+    <Navbar id="navMio"  className= "fixed top-0 z-[100] h-max max-w-full rounded-b-xl rounded-t-none border-none py-4 px-8 lg:px-28 bg-transparent" 
+    style={{backdropFilter: "none", boxShadow:"none"}}>
+      
       <div className="flex items-center justify-between text-gray-200">
         <Typography
           as="a"
@@ -87,7 +96,7 @@ export default function Nav() {
         </Typography>
         <div className="flex items-center gap-4 ">
           <div className="mr-4 hidden lg:block">{navList}</div>
-          <div className="flex items-center gap-x-1">
+          {/* <div className="flex items-center gap-x-1">
             <Button variant="text" size="sm" className="hidden lg:inline-block">
               <span>Log In</span>
             </Button>
@@ -98,7 +107,7 @@ export default function Nav() {
             >
               <span>Sign in</span>
             </Button>
-          </div>
+          </div> */}
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -140,14 +149,14 @@ export default function Nav() {
       </div>
       <Collapse open={openNav}>
         {navList}
-        <div className="flex items-center gap-x-1">
+        {/* <div className="flex items-center gap-x-1">
           <Button fullWidth variant="text" size="sm" className="">
             <span>Log In</span>
           </Button>
           <Button fullWidth variant="gradient" size="sm" className="">
             <span>Sign in</span>
           </Button>
-        </div>
+        </div> */}
       </Collapse>
     </Navbar>
   );
