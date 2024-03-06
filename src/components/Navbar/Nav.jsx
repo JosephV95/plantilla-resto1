@@ -2,7 +2,7 @@ import React from "react";
 import {
   Navbar,
   Typography,
-  Button,
+  // Button,
   IconButton,
   Collapse,
 } from "@material-tailwind/react";
@@ -16,27 +16,26 @@ export default function Nav() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
     const selectNav = document.getElementById('navMio')
-     const scrolled = ()=>{
+
+    const scrolled = ()=>{
       if (window.scrollY > 100) {
         selectNav.classList.add('bg-black/70')
         selectNav.classList.remove('bg-transparent')
       } else {
-        // if (screen.width >= 960) {
           selectNav.classList.remove('bg-black/70')
-        // } 
-        
       }
-
     }
     
      window.addEventListener('scroll', scrolled)
   }, []);
+  
+  //? Efecto para oscurecer el bg en mobile, se suma al efecto del scroll anterior
   React.useEffect(()=>{
     const selectNav = document.getElementById('navMio');
-    if(openNav){
+    if(openNav && window.screen.width < 960){
       selectNav.classList.add('bg-black/80')
-      
-    } else{
+
+    } else {
       selectNav.classList.remove('bg-black/80')
     }
   })
