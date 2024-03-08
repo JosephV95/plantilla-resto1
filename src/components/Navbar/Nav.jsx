@@ -68,7 +68,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-lg text-gray-100"
       >
-        <a href="#" className="flex items-center">
+        <a href="#sobreNosotros" className="flex items-center">
           Sobre Nosotros
         </a>
       </Typography>
@@ -78,7 +78,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-lg text-gray-100"
       >
-        <a href="#" className="flex items-center">
+        <a href="#contacto" className="flex items-center">
           Contacto
         </a>
       </Typography>
