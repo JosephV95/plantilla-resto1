@@ -78,6 +78,26 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-lg text-gray-100"
       >
+        <a href="#eventos" className="flex items-center">
+          Eventos
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-semibold text-lg text-gray-100"
+      >
+        <a href="#galeria" className="flex items-center">
+          Galería
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-semibold text-lg text-gray-100"
+      >
         <a href="#contacto" className="flex items-center">
           Contacto
         </a>
