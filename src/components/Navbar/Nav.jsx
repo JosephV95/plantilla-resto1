@@ -41,12 +41,12 @@ export default function Nav() {
   })
 
   const navList = (
-    <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 items-center">
+    <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 items-center">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#" className="flex items-center">
           Inicio
@@ -56,7 +56,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#sobreNosotros" className="flex items-center">
           Sobre Nosotros
@@ -66,7 +66,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#" className="flex items-center">
           Menú
@@ -77,7 +77,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#eventos" className="flex items-center">
           Eventos
@@ -87,7 +87,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#galeria" className="flex items-center">
           Galería
@@ -97,7 +97,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-semibold text-lg text-gray-100"
+        className="p-1 font-semibold text-base text-gray-100"
       >
         <a href="#contacto" className="flex items-center">
           Contacto
