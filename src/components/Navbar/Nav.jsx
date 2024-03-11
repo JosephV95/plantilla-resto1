@@ -48,7 +48,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-base text-gray-100"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center active:text-red-400 active">
           Inicio
         </a>
       </Typography>
@@ -79,7 +79,7 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-semibold text-base text-gray-100"
       >
-        <a href="#eventos" className="flex items-center">
+        <a href="#carouselEnEventos" className="flex items-center">
           Eventos
         </a>
       </Typography>
