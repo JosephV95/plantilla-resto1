@@ -42,67 +42,37 @@ export default function Nav() {
 
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 items-center">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#" className="flex items-center">
+      <li>
+        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Inicio
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#sobreNosotros" className="flex items-center">
+      </li>
+      <li>
+        <a href="#sobreNosotros" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Sobre Nosotros
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#" className="flex items-center">
+      </li>
+      <li>
+        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Menú
         </a>
-      </Typography>
+      </li>
       
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#carouselEnEventos" className="flex items-center">
+      <li>
+        <a href="#carouselEnEventos" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Eventos
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#galeria" className="flex items-center">
+      </li>
+      <li>
+        <a href="#galeria" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Galería
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-semibold text-base text-gray-100"
-      >
-        <a href="#contacto" className="flex items-center">
+      </li>
+      <li>
+        <a href="#contacto" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
           Contacto
         </a>
-      </Typography>
+      </li>
     </ul>
   );
 
