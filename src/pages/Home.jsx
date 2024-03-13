@@ -24,7 +24,7 @@ export default function Home() {
       <CarouselDelHeader />
       <SobreNosotros />
       <Hero />
-      {/* <MenuDelResto /> */}
+      <MenuDelResto />
 
       <EventosPrivados />
       <GalleriaImg />
