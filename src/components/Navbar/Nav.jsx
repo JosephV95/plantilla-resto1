@@ -43,33 +43,33 @@ export default function Nav() {
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 items-center">
       <li>
-        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Inicio
         </a>
       </li>
       <li>
-        <a href="#sobreNosotros" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#sobreNosotros" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Sobre Nosotros
         </a>
       </li>
       <li>
-        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Menú
         </a>
       </li>
       
       <li>
-        <a href="#carouselEnEventos" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#carouselEnEventos" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Eventos
         </a>
       </li>
       <li>
-        <a href="#galeria" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#galeria" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Galería
         </a>
       </li>
       <li>
-        <a href="#contacto" className="flex items-center  p-1 font-semibold text-base text-gray-100  nav-link scrollto">
+        <a href="#contacto" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Contacto
         </a>
       </li>
