@@ -53,7 +53,7 @@ export default function Nav() {
         </a>
       </li>
       <li>
-        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#menu" className="flex items-center  p-1 font-semibold text-base text-gray-100">
           Menú
         </a>
       </li>
