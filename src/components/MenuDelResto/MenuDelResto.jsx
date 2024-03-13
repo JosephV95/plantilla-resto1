@@ -17,7 +17,7 @@ export default function MenuDelResto() {
   };
 
   return (
-    <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed">
+    <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed" id="menu">
       <div className="py-16 space-y-5 bg-white/80"> 
         <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
 
