@@ -6,7 +6,7 @@ export const traerComidas = async()=>{
         await fetch('https://foodied-server-nacho-fernandezs-projects.vercel.app/comidas/all')
         .then((res)=> res.json())
         .then( res => comidas = res.comidas)
-        console.log(comidas);
+
         return comidas
 
     } catch (error) {
