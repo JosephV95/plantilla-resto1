@@ -6,15 +6,15 @@ import { useEffect } from "react";
 export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
   
-  useEffect(() => {
-      let filterizr = new Filterizr('.filter-container', options);  
+  // useEffect(() => {
+  //     let filterizr = new Filterizr('.filter-container', options);  
    
-    return () => filterizr.destroy();
-  }, []); // Reinitialize Filterizr when comidasStore changes
+  //   return () => filterizr.destroy();
+  // }, []); // Reinitialize Filterizr when comidasStore changes
 
-  const options = {
-    // Tus opciones de configuración de Filterizr aquí...
-  };
+  // const options = {
+  //   // Tus opciones de configuración de Filterizr aquí...
+  // };
 
   return (
     <section className="bg-[url('../img/comidas-bg.jpg')] bg-center bg-cover bg-fixed" id="menu">
