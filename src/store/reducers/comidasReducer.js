@@ -5,6 +5,9 @@ const initialState = {
     comidas: [
         {nombre: "random"},
         {nombre: "second"}
+    ],
+    comidasFiltradas: [
+
     ]
 }
 
@@ -13,6 +16,9 @@ const comidasReducer = createReducer( initialState, (builder)=>{
     .addCase(comidasActions.obtener_comidas, (state, action)=>{
         // console.log(action.payload);
         return {...state, comidas: action.payload}
+    })
+    .addCase(comidasActions.filtrar_comidas, (state, action)=>{
+        return {...state, comidas: action}
     })
 })
 
