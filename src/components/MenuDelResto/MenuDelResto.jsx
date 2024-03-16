@@ -1,10 +1,13 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ComidaItem from "./ComidaItem";
 import Filterizr from 'filterizr'
 import { useEffect } from "react";
+import comidasActions from "../../store/actions/comidasActions";
 
 export default function MenuDelResto() {
+  const dispatch = useDispatch();
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
+  const comidasFiltradas = useSelector(store => store.comidasReducer.comidasFiltradas)
   
   // useEffect(() => {
   //     let filterizr = new Filterizr('.filter-container', options);  
@@ -24,7 +27,8 @@ export default function MenuDelResto() {
         <div>
           <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2">
             <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all">Todas</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes">Carnes</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes" onClick={()=>{dispatch(comidasActions.obtener_comidas())
+          }}>Carnes</li>
             <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas">Especiales</li>
             <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas">Entradas</li>
           </ul>
