@@ -15,10 +15,10 @@ const comidasReducer = createReducer( initialState, (builder)=>{
     builder
     .addCase(comidasActions.obtener_comidas, (state, action)=>{
         // console.log(action.payload);
-        return {...state, comidas: action.payload}
+        return {...state, comidas: action.payload, comidasFiltradas: action.payload}
     })
     .addCase(comidasActions.filtrar_comidas, (state, action)=>{
-        return {...state, comidas: action}
+        return {...state, comidas: action.payload}
     })
 })
 
