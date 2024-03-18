@@ -71,3 +71,7 @@
     z-index: 0;
 }
 
+/* Efecto para mejorar el desplazamiento del scroll (se usa en el desplazamiento de los links del nav */
+*{
+    scroll-behavior: smooth;
+}
