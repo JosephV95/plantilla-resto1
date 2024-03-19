@@ -7,16 +7,15 @@ import comidasActions from "../../store/actions/comidasActions";
 export default function MenuDelResto() {
   const dispatch = useDispatch();
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
-  const comidasFiltradas = useSelector(store => store.comidasReducer.comidasFiltradas)
+  const comidasRespaldoStore = useSelector(store => store.comidasReducer.comidasRespaldo)
 
   const filtroParaComidas = (elArray, palabra)=>{
     if (palabra) {
-      dispatch(comidasActions.filtrar_comidas( {unArray: elArray, categoria: palabra}))
-    }
-      
+      dispatch(comidasActions.filtrar_comidas( {unArray: elArray, categoria: palabra} ))
+    } 
   }
    useEffect(() => {
-    console.log(comidasFiltradas);
+    console.log(comidasRespaldoStore);
    },[]);
   // useEffect(() => {
   //     let filterizr = new Filterizr('.filter-container', options);  
@@ -35,10 +34,10 @@ export default function MenuDelResto() {
 
         <div>
           <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2">
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all">Todas</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes" onClick={()=> {filtroParaComidas(comidasFiltradas, "carnes")}}>Carnes</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas" onClick={()=> {filtroParaComidas(comidasFiltradas, "pastas")}}>Especiales</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas" onClick={()=> {filtroParaComidas(comidasFiltradas, "")}}>Entradas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "all")}}>Todas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "carnes")}}>Carnes</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "pastas")}}>Pastas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "ensaladas")}}>Ensaladas</li>
           </ul>
         </div>
 
