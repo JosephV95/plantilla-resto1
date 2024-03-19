@@ -9,14 +9,19 @@ export default function MenuDelResto() {
   const comidasStore = useSelector(store => store.comidasReducer.comidas)
   const comidasRespaldoStore = useSelector(store => store.comidasReducer.comidasRespaldo)
 
+  //* funcion para filtrado, en caso de que se clickee 'todas' se pasa como parametro el backup con todas las comidas
   const filtroParaComidas = (elArray, palabra)=>{
-    if (palabra) {
+    if (palabra != "all") {
       dispatch(comidasActions.filtrar_comidas( {unArray: elArray, categoria: palabra} ))
-    } 
+    } else {
+      dispatch(comidasActions.obtener_comidas(comidasRespaldoStore))
+    }
   }
-   useEffect(() => {
-    console.log(comidasRespaldoStore);
-   },[]);
+
+  useEffect(() => {
+    console.log(comidasStore);
+  },[]);
+
   // useEffect(() => {
   //     let filterizr = new Filterizr('.filter-container', options);  
    
