@@ -10,7 +10,7 @@ import {
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
 
-  //? Estado para aplicar efectos a un link activo 
+  //? Estado para aplicar estilos a un link activo 
   const [linkActive, setLinkActive] = React.useState("inicio")
 
   React.useEffect(() => {
