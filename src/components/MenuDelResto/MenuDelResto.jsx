@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import ComidaItem from "./ComidaItem";
-import Filterizr from 'filterizr'
+// import Filterizr from 'filterizr'
 import { useEffect, useState } from "react";
 import comidasActions from "../../store/actions/comidasActions";
 
@@ -26,10 +26,6 @@ export default function MenuDelResto() {
     console.log(comidasStore);
   },[]);
 
-  // * effect para verificar la categoria elegida y asi poder apicar el efecto
-  useEffect(()=>{
-    console.log(categoriaElegida);
-  }, [categoriaElegida])
 
   // useEffect(() => {
   //     let filterizr = new Filterizr('.filter-container', options);  
@@ -48,13 +44,13 @@ export default function MenuDelResto() {
 
         <div>
           <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2 ">
-            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white ${categoriaElegida =="all"? "bg-[#ffb03b] text-white" :""}`} data-filter="all" 
+            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida =="all"? "bg-[#ffb03b] text-white" :""}`} data-filter="all" 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "all")}}>Todas</li>
-            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white ${categoriaElegida =="carnes"? "bg-[#ffb03b] text-white" :""}`} data-filter="carnes" 
+            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida =="carnes"? "bg-[#ffb03b] text-white" :""}`} data-filter="carnes" 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "carnes")}}>Carnes</li>
-            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white ${categoriaElegida =="pastas"? "bg-[#ffb03b] text-white" :""}`} data-filter="pastas" 
+            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida =="pastas"? "bg-[#ffb03b] text-white" :""}`} data-filter="pastas" 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "pastas")}}>Pastas</li>
-            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white ${categoriaElegida =="ensaladas"? "bg-[#ffb03b] text-white" :""}`} data-filter="ensaladas" 
+            <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida =="ensaladas"? "bg-[#ffb03b] text-white" :""}`} data-filter="ensaladas" 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "ensaladas")}}>Ensaladas</li>
           </ul>
         </div>
