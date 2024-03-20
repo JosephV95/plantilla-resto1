@@ -10,6 +10,9 @@ import {
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
 
+  //? Estado para aplicar efectos a un link activo 
+  const [linkActive, setLinkActive] = React.useState("inicio")
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -43,33 +46,33 @@ export default function Nav() {
   const navList = (
     <ul className="t-2 mb-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 items-center">
       <li>
-        <a href="#" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "inicio"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("inicio")}}>
           Inicio
         </a>
       </li>
       <li>
-        <a href="#sobreNosotros" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#sobreNosotros" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "sobreNosotros"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("sobreNosotros")}}>
           Sobre Nosotros
         </a>
       </li>
       <li>
-        <a href="#menu" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#menu" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "menu"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("menu")}}>
           Menú
         </a>
       </li>
       
       <li>
-        <a href="#carouselEnEventos" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#carouselEnEventos" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "eventos"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("eventos")}}>
           Eventos
         </a>
       </li>
       <li>
-        <a href="#galeria" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#galeria" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "galeria"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("galeria")}}>
           Galería
         </a>
       </li>
       <li>
-        <a href="#contacto" className="flex items-center  p-1 font-semibold text-base text-gray-100">
+        <a href="#contacto" className={`flex items-center  p-1 font-semibold text-base duration-300  ${linkActive == "contacto"? "text-[#ffb03b] underline underline-offset-2" :"text-gray-100"}`} onClick={()=>{setLinkActive("contacto")}}>
           Contacto
         </a>
       </li>
