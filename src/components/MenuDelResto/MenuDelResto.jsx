@@ -38,11 +38,11 @@ export default function MenuDelResto() {
         <h1 className="text-center text-3xl">Consulta nuestro <span className="text-[#ffb03b]">sabroso Menú</span></h1>
 
         <div>
-          <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2">
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="all" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "all")}}>Todas</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="carnes" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "carnes")}}>Carnes</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="pastas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "pastas")}}>Pastas</li>
-            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline " data-filter="ensaladas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "ensaladas")}}>Ensaladas</li>
+          <ul className="flex flex-row flex-wrap justify-center gap-x-3 gap-y-2 ">
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:text-[#ffb03b] hover:bg-black/70" data-filter="all" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "all")}}>Todas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:text-[#ffb03b] hover:bg-black/70" data-filter="carnes" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "carnes")}}>Carnes</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline group-hover:bg-[#ffb03b]" data-filter="pastas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "pastas")}}>Pastas</li>
+            <li className="px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline group-hover:bg-[#ffb03b]" data-filter="ensaladas" onClick={()=> {filtroParaComidas(comidasRespaldoStore, "ensaladas")}}>Ensaladas</li>
           </ul>
         </div>
 
