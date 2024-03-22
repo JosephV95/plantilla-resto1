@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function EventosPrivados() {
   return (
-      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center py-12 flex flex-col items-center" id="carouselEnEventos">
+      <article className="w-full relative bg-[url('../img/events/events-bg.jpg')] bg-cover bg-center pt-16 pb-9 flex flex-col items-center" id="carouselEnEventos">
 
         <h2 className="z-20 text-white text-3xl font-bold text-center">Organiza <span className="text-orange-400">tus eventos</span> con nosotros</h2>
         <Carousel className="z-20 " loop  prevArrow={false} nextArrow={false} autoplay autoplayDelay={7000}
