@@ -22,11 +22,21 @@ export default function MenuDelResto() {
     }
   }
 
-  useEffect(() => {
-    console.log(comidasStore);
-  },[]);
+  //! Array con las categorias de comidas 
+  // const categoriasComidas = ['carnes', 'pastas', 'sopas', 'sushi', 'dulces', 'pizzas', 'hamburguesas', 'ensaladas']
+  
+  // ? Funcion que podria obtener las categorias de un array de comidas
+  // useEffect(() => {
+  //   const categ = []
+  //   comidasRespaldoStore.forEach(comida => {
+  //     if (!categ.includes(comida.categoria)) {
+  //       categ.push(comida.categoria)
+  //       console.log(categ)
+  //     }
+  //   });
+  // },[]);
 
-
+// ! Configuracion y funciones para el funcionamiento de la libreria Filterizr
   // useEffect(() => {
   //     let filterizr = new Filterizr('.filter-container', options);  
    
@@ -52,6 +62,12 @@ export default function MenuDelResto() {
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "pastas")}}>Pastas</li>
             <li className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida =="ensaladas"? "bg-[#ffb03b] text-white" :""}`} data-filter="ensaladas" 
               onClick={()=> {filtroParaComidas(comidasRespaldoStore, "ensaladas")}}>Ensaladas</li>
+              {/* {categoriasComidas.map((categoria, index) => (
+                <li key={index} className={`px-4 py-2 cursor-pointer border-2 border-solid border-[#ffb03b] rounded-3xl inline hover:bg-[#ffb03b] hover:text-white duration-300 ${categoriaElegida == categoria? "bg-[#ffb03b] text-white" :""}`} data-filter={categoria} 
+                onClick={()=> {filtroParaComidas(comidasRespaldoStore, categoria)}}>
+                {categoria.charAt(0).toUpperCase() + categoria.slice(1)}</li>
+              ))} */}
+                {/* //! La Funcion de arriba es para lograr que la primer letra del string este en mayuscula */}
           </ul>
         </div>
 
