@@ -72,7 +72,7 @@ export default function MenuDelResto() {
         </div>
 
         <div className="filter-container w-full">
-          <div className="w-full flex flex-row flex-wrap justify-center lg:justify-between px-2 lg:px-14 ">
+          <div className="w-full flex flex-row flex-wrap gap-y-3 justify-center lg:justify-between px-2 lg:px-14 ">
             {comidasStore.map((comida, index) => (
               <ComidaItem key={index} nombre={comida.nombre} img={comida.imgUrl} descripcion={comida.descripcion} precio={comida.precio} categoria={comida.categoria}></ComidaItem>
             ))}
