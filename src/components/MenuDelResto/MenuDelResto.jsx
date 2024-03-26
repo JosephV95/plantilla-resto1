@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import ComidaItem from "./ComidaItem";
 // import Filterizr from 'filterizr'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import comidasActions from "../../store/actions/comidasActions";
 
 export default function MenuDelResto() {
